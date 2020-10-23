@@ -1,0 +1,86 @@
+.text {
+  &-title {
+    font-size: 2rem;
+    color: $blue;
+    font-weight: bold;
+
+    @media screen and (max-width: $tablet) {
+      font-size: 1em;
+    }
+  }
+
+  &-number {
+    display: block;
+    font-size: 1.8em;
+    font-weight: bold;
+
+    @media screen and (max-width: $tablet) {
+      font-size: 1.5em;
+    }
+
+    &.small {
+      font-size: 1.4em;
+    }
+  }
+
+  &-small {
+    font-size: 16px;
+    line-height: 130%;
+
+    @media screen and (max-width: $tablet) {
+      font-size: 10px;
+    }
+  }
+
+  &-normal {
+    font-size: 18px;
+    line-height: 130%;
+
+    @media screen and (max-width: $tablet) {
+      font-size: 12px;
+    }
+  }
+
+  &-medium {
+    font-size: 24px;
+    line-height: 130%;
+
+    @media screen and (max-width: $tablet) {
+      font-size: 16px
+    }
+  }
+
+  &-large {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 130%;
+
+    @media screen and (max-width: $tablet) {
+      font-size: 28px;
+    }
+  }
+
+  &-error {
+    color: $blue;
+    font-size: 1rem;
+  }
+
+  &-gray {
+    color: $light-gray;
+  }
+
+  &-red {
+    color: $red;
+    font-size: 1.8rem;
+
+    a {
+      text-decoration: inherit;
+      font-weight: bold;
+      color: $red;
+    }
+  }
+
+  &-blue {
+    color: $blue;
+  }
+}

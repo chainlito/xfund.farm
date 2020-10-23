@@ -1,0 +1,50 @@
+.card {
+  color: #A2ABB7 !important;
+
+  &:last-child {
+    margin: 0 !important;
+  }
+
+  &.card-v {
+    margin-bottom: 0px;
+	  border: 2px solid #E6E8EA;
+    border-radius: 0px !important;
+	  box-shadow: none !important;
+
+    @media screen and (max-width: $tablet) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &.card-h {
+    margin-right: 50px;
+    width: 360px;
+
+    @media screen and (max-width: $desktop) {
+      width: 300px;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      margin-bottom: 30px !important;
+    }
+
+    &.medium {
+      width: 300px;
+      border-radius: 10px !important;
+      box-shadow: none;
+      background: rgba(2, 136, 202, 0.15) !important;
+    }
+  }
+
+  & b {
+    display: block;
+    font-size: 1.8em;
+
+    @media screen and (max-width: $tablet) {
+      font-size: 1.5em;
+    }
+  }
+}
+
+.MuiCardContent-root {
+  padding: 15px 15px 25px 15px;
+}
