@@ -33,7 +33,7 @@ export const StakeAsset = ({ totalStaked, staked, allowed, onApprove, onStake, o
             <img className="logo-image" src={tokenInfo.image} alt={tokenInfo.name} />
           </div>
           <div className='center-h boxsize mt-50'>
-            <span className='text-number'>
+            <span className='text-medium text-blue'>
               {numberWithDecimals(staked, tokenInfo.decimals, Config.Utils.decimals)}
             </span>
           </div>

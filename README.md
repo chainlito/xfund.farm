@@ -1,1 +1,1 @@
-# zfarm-dashboard
+# xFUND Farming Dashboard

@@ -22,7 +22,7 @@ export const RewardAsset = ({ earned, onHarvest }: Props) => {
             <img className="logo-image" src={Config.Token.image} alt={Config.Token.name} />
           </div>
           <div className='center-h boxsize mt-50'>
-            <span className='text-number'>
+            <span className='text-medium text-blue'>
               {numberWithDecimals(earned, Config.Token.decimals, Config.Utils.decimals)}
             </span>
           </div>
