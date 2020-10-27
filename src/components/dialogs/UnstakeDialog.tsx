@@ -30,7 +30,7 @@ const UnstakeDialog: React.FC<Props> = ({
 
   const handleUnstake = () => {
     const _amount = parseFloat(unstakeAmount);
-    const _balance = numberWithDecimals(staked, stakeToken.decimals, Config.Utils.decimals);
+    const _balance = numberWithDecimals(staked, stakeToken.decimals, stakeToken.decimals);
     if (_amount > _balance || _amount <= 0) {
       alert('Invalid withdraw amount');
     } else {
@@ -40,7 +40,7 @@ const UnstakeDialog: React.FC<Props> = ({
   }
 
   const handleSetMax = () => {
-    const _balance = numberWithDecimals(staked, stakeToken.decimals, Config.Utils.decimals);
+    const _balance = numberWithDecimals(staked, stakeToken.decimals, stakeToken.decimals);
     setUnstakeAmount(_balance.toString());
   }
 

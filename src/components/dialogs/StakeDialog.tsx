@@ -28,7 +28,7 @@ const StakeDialog: React.FC<Props> = ({
 
   const handleStake = () => {
     const _amount = parseFloat(stakeAmount);
-    const _balance = numberWithDecimals(userBalance, stakeToken.decimals, Config.Utils.decimals, true);
+    const _balance = numberWithDecimals(userBalance, stakeToken.decimals, stakeToken.decimals, true);
     if (_amount > _balance || _amount <= 0) {
       alert('Invalid stake amount');
     } else {
