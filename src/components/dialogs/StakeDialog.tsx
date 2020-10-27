@@ -38,7 +38,7 @@ const StakeDialog: React.FC<Props> = ({
   }
 
   const handleSetMax = () => {
-    const _balance = numberWithDecimals(userBalance, stakeToken.decimals, Config.Utils.decimals, true);
+    const _balance = numberWithDecimals(userBalance, stakeToken.decimals, stakeToken.decimals, true);
     setStakeAmount(_balance.toString());
   }
 
